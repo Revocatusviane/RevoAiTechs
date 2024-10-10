@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoAiTechs Website</title>
+    <style>
+        .logo{
+            height: 100px;
+            width:  100px;
+            clip-path: circle(100px);
+            position: left;
+            object-fit: contain;
+            background-color: rgb(255, 234, 0);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        .myButton{
+            background-color: #4CAF50; /* Green background */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .myButton:hover{
+            background-color: rgb(26, 44, 57);
+            opacity: 0.5;
+            transition-delay: 0.3s;
+           
+        }
+        /* Initially hide the text block */
+        .content{    
+            display: none;
+            margin-top: 20px;
+        }
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margins */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+   .logos{
+    background-color: rgb(10, 65, 74);
+   
+   }
+   .buttons{
+    width: 150px;
+    color: rgb(48, 4, 4);
+    border-radius: 10px;
+    background-color: rgba(36, 2, 17, 0.757);
+   }
+        .top{
+            width: 100%;
+            min-height: 11000px;
+            background-color: rgb(3, 12, 40);
+            left: 10px;
+            color: white;
+           scroll-behavior:auto;
+           scroll-padding-bottom: 100%;
+           padding-left: 10px;
+           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+        }
+        
+        .container{
+            max-width: 1170px;
+            margin: auto;
+            
+        }
+        ul{
+            list-style: none;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .Footer-column{
+            width: 15%;
+            padding: 0 15px;
+        }
+        .Footer-column h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 700;
+            position: relative;
+        }
+        .footer{
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom:10px; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    height: 210px; /* Set a height for the footer */
+    width: 100%; /* Full width */
+    background-color: rgb(16, 42, 170);
+    color: rgb(135, 21, 21); /* Text color */
+    text-align: center; /* Center the text */
+    line-height: 15px; /* Center the text vertically */
+    align-items: baseline;
+        }
+        .Footer-column ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #bbbbbb;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .Footer-column ul li a:hover{
+            color: #ffffff;
+            padding-left: 20px;
+        }
+        /* Responsive */
+        @media (max-width: 767px){
+            .Footer-column{
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 574px){
+            .Footer-column{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+     </head>
+    <body >
+        <div class="logos">
+            <img class="logo" src="/Users/sonofgod/Desktop/html and css/RevoAiTechs Logo.jpg">
+        </div>
+        <div class="top">  
+          <!-- Button to display text -->
+            <button class="myButton" onclick="showText('textBlock2')">Home</button>
+            <button class="myButton" onclick="showText('textBlock1')">About-us</button>
+            <button class="myButton" onclick="showText('textBlock3')">Services</button>
+            <button class="myButton" onclick="showText('textBlock4')">Mission</button>       
+            <button class="myButton" onclick="showText('textBlock5')">Contact</button>        
+            <button class="myButton" onclick="showVideoUpload()">Videos</button>
+            <button class="myButton" onclick="showImageUpload()">Images</button>
+       
+        <div id="textBlock1" class="content">
+            <h1>About Us – RevoAiTechs</h1>
+
+            <p>Welcome to <strong>RevoAiTechs</strong>, where innovation meets intelligence. We are a forward-thinking technology company dedicated to revolutionizing industries through cutting-edge solutions in <strong>Artificial Intelligence (AI)</strong>, <strong>Machine Learning (ML)</strong>, and <strong>Automation</strong>.</p>
+        
+            <p>At RevoAiTechs, we believe in the power of AI to transform businesses, streamline operations, and create impactful solutions tailored to meet the evolving needs of today's world. Our mission is to bridge the gap between complex technology and practical applications, making AI accessible, understandable, and highly effective for our clients.</p>
+        
+            <h2>Our Expertise</h2>
+        
+            <p><strong>AI-Powered Solutions:</strong> From predictive analytics to intelligent automation, we design AI systems that empower businesses to make data-driven decisions.</p>
+            
+            <p><strong>Custom Software Development:</strong> Our team of skilled engineers builds innovative software tailored to solve unique challenges, whether in industries such as healthcare, manufacturing, finance, or beyond.</p>
+        
+            <p><strong>Industrial Automation:</strong> We specialize in developing AI-driven monitoring and automation systems to enhance efficiency, reduce downtime, and optimize industrial processes.</p>
+        
+            <p><strong>ML Consulting:</strong> Our experts guide organizations in implementing machine learning algorithms that can process large volumes of data, discover patterns, and predict future trends.</p>
+        
+            <h2>Why Choose RevoAiTechs?</h2>
+        
+            <p><strong>Tailored Innovation:</strong> We create solutions that are customized to your needs, ensuring that technology serves your business objectives.</p>
+        
+            <p><strong>Cutting-Edge Technology:</strong> With a deep understanding of AI and ML, we stay ahead of the curve to deliver the most advanced solutions in the market.</p>
+        
+            <p><strong>Passionate Team:</strong> Our team of engineers, data scientists, and innovators are driven by a passion for technology and a desire to push the boundaries of what’s possible.</p>
+        
+            <p><strong>Client-Centric Approach:</strong> We work closely with our clients at every step of the way, ensuring seamless collaboration and results that truly make a difference.</p>
+        
+            <p>At RevoAiTechs, we don’t just build technology—we create the future. Join us on this journey to redefine the role of AI in business and beyond.</p>
+        </div>
+        <div id="textBlock2" class="content">
+            <h1>Welcome to RevoAiTechs</h1>
+
+    <p>At <strong>RevoAiTechs</strong>, we are dedicated to harnessing the power of <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong> to transform businesses and drive innovation. Our mission is to provide cutting-edge technology solutions that empower organizations to thrive in an ever-evolving digital landscape.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision a future where technology seamlessly integrates with everyday business processes, enabling companies to make smarter decisions, enhance efficiency, and foster sustainable growth. With our expertise in AI and automation, we strive to lead the way in technological advancement and make it accessible to all.</p>
+
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li><strong>Innovative Solutions:</strong> We offer state-of-the-art technology tailored to meet your specific business needs.</li>
+        <li><strong>Expert Team:</strong> Our skilled professionals bring extensive experience and knowledge in AI, ML, and software development.</li>
+        <li><strong>Client-Focused:</strong> We prioritize our clients, ensuring that our solutions drive measurable results and enhance business performance.</li>
+        <li><strong>Continuous Support:</strong> Our commitment to our clients doesn't end with delivery; we provide ongoing support and optimization to ensure your success.</li>
+    </ul>
+
+    <h2>Get Started Today!</h2>
+    <p>Join us at RevoAiTechs and unlock the full potential of your business with our innovative AI solutions. Whether you're looking to automate processes, gain insights from data, or develop custom software, we are here to help.</p>
+
+    <p>Contact us today to learn more about how we can assist you in transforming your business through technology!</p>
+
+            </div>
+            <div id="textBlock3" class="content">
+                <h1>Our Services – RevoAiTechs</h1>
+
+                <p>At <strong>RevoAiTechs</strong>, we provide a range of innovative services designed to empower businesses and streamline operations through advanced technology solutions.</p>
+            
+                <h2>1. AI-Powered Solutions</h2>
+                <p>Our AI-driven systems leverage powerful algorithms to analyze data and provide actionable insights. Whether you're looking to improve decision-making or optimize your processes, our AI solutions are tailored to help your business grow and stay competitive.</p>
+            
+                <h2>2. Custom Software Development</h2>
+                <p>Our expert engineers build custom software solutions that address the specific needs of your business. From web applications to complex enterprise systems, we develop scalable, user-friendly, and innovative software that aligns with your goals.</p>
+            
+                <h2>3. Industrial Automation</h2>
+                <p>We specialize in designing and implementing AI-powered automation systems for industries. These systems help improve efficiency, minimize human error, and ensure continuous monitoring of critical industrial processes, leading to reduced downtime and increased productivity.</p>
+            
+                <h2>4. Machine Learning Consulting</h2>
+                <p>Our team of data scientists and AI experts helps you unlock the power of machine learning. We work with you to understand your data, develop ML models, and implement solutions that provide insights and predictive analytics to improve business outcomes.</p>
+            
+                <h2>5. Data Analytics and Visualization</h2>
+                <p>We offer advanced data analytics and visualization services that transform complex data into clear, actionable insights. Our interactive dashboards and reports help businesses make informed decisions and track performance in real-time.</p>
+            
+                <h2>6. Web Development and Digital Solutions</h2>
+                <p>RevoAiTechs also provides end-to-end web development services, creating dynamic, responsive websites and digital solutions that enhance your online presence and engage your audience. From e-commerce platforms to portfolio websites, we've got you covered.</p>
+            
+                <h2>Why RevoAiTechs?</h2>
+                <p>At RevoAiTechs, our goal is to harness the power of technology to create efficient, scalable, and intelligent systems that transform the way you do business. We pride ourselves on delivering cutting-edge solutions with a client-first approach, ensuring that every solution is tailored to meet your unique needs.</p>
+            
+                <p>Let's build the future together, one innovation at a time.</p>
+                </div>
+                <div id="textBlock4" class="content">
+                <h1>Our Mission – RevoAiTechs</h1>
+
+                <p>At <strong>RevoAiTechs</strong>, our mission is to harness the power of technology to drive innovation and create intelligent solutions that address the real-world challenges faced by businesses across industries.</p>
+
+                <p>We are committed to delivering transformative technology that is accessible, practical, and highly impactful. By combining advanced <strong>Artificial Intelligence (AI)</strong>, <strong>Machine Learning (ML)</strong>, and automation tools, we aim to empower businesses to make informed decisions, optimize processes, and enhance operational efficiency.</p>
+
+                <h2>Key Pillars of Our Mission</h2>
+
+                <p><strong>1. Innovation:</strong> To continuously push the boundaries of what's possible with AI and technology, developing cutting-edge solutions that solve modern business challenges.</p>
+
+                <p><strong>2. Accessibility:</strong> To make advanced technology easily accessible and understandable for businesses of all sizes, ensuring that everyone can benefit from AI-driven insights and automation.</p>
+
+                <p><strong>3. Client-Centric Approach:</strong> To prioritize the needs of our clients by providing personalized solutions that align with their business objectives and drive measurable results.</p>
+
+                <p><strong>4. Impact:</strong> To create solutions that have a real and lasting impact on our clients' operations, helping them improve efficiency, reduce costs, and stay ahead of the competition.</p>
+
+                <p>Our mission is to lead the way in AI and technology innovation while always staying true to our core values of accessibility, impact, and client satisfaction.</p>
+
+                <p>At RevoAiTechs, we believe in building a future where businesses are empowered by intelligent technology to thrive and succeed in a rapidly changing world.</p>
+
+                    </div>
+                    <div id="textBlock5" class="content">
+                        <h1>Contact Us</h1>
+
+                        <p>We'd love to hear from you! Whether you have questions about our services, need support, or want to discuss potential collaborations, feel free to reach out to us.</p>
+                    
+                        <h2>Get in Touch</h2>
+                        <p>You can contact us via the following methods:</p>
+                    
+                        <ul>
+                            <li><strong>Email:</strong> <a href="mailto:revocatusviane36@gmail.com">revocatusviane36@gmail.com</a></li>
+                            <li><strong>Phone:</strong> <a href="tel:+255762964707">+255 762 964 707</a></li>
+                            <li><strong>Location:</strong> Tanzania (Our services are available online and in real life )</li>
+                        </ul>
+                    
+                        <h2>Online Services</h2>
+                        <p>At RevoAiTechs, we provide our services online, ensuring that you can reach us from anywhere in the world. 
+                        Our team is ready to assist you with innovative technology solutions tailored to your needs.
+                        But if you need an automated hardwired systems we can offer special services to around Tanzania.
+                       </p>
+                    
+                        <h2>Follow Us</h2>
+                        <p>Stay updated with our latest news and offerings:</p>
+                        <ul>
+                            <li><strong>Website:</strong> <a href="https://www.revoaitech.com">www.revoaitech.com</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/feed/">Our LinkedIn Profile</a></li>
+                            <li><strong>Twitter:</strong> <a href="https://x.com/home?lang=en">Our Twitter Profile</a></li>
+                        </ul>
+                    
+                        <p>Thank you for considering RevoAiTechs. We look forward to connecting with you!</p>
+                    
+                        </div>
+
+        <!-- Video Upload Section -->
+        <div id="video-upload-section" style="display:none;">
+            <h2>Upload a Video</h2>
+            <form id="video-upload-form">
+                <input type="file" accept="video/*" id="video-file" required>
+                <button type="button" onclick="uploadVideo()">Upload Video</button>
+            </form>
+            <div id="uploaded-video"></div>
+        </div>
+
+        <!-- Image Upload Section -->
+        <div id="image-upload-section" style="display:none;">
+            <h2>Upload an Image</h2>
+            <form id="image-upload-form">
+                <input type="file" accept="image/*" id="image-file" required>
+                <button type="button" onclick="uploadImage()">Upload Image</button>
+            </form>
+            <div id="uploaded-image"></div>
+        </div>
+    </div>
+     
+
+    <div class="footer"> 
+        <footer >
+            <div class="container">
+                <div class="row">
+                    <div class="Footer-column">
+                        <h4>RevoAiTechs</h4>
+                        <ul>
+                            <button class="buttons" onclick="companyName()"><li><a href="#">Company Name</a></li></button>
+                            <button class="buttons"><li><a href="RevoAiTechs Logo.jpg">Logo</a></li></button>
+                            <button class="buttons" onclick="background()"><li><a href="#">Background</a></li></button>
+                            <button class="buttons" onclick="Founder()"><li><a href="#">Founder</a></li></button>
+                        </ul>
+                    </div>
+                    <div class="Footer-column">
+                        <h4>Terms and conditions</h4>
+                        <ul>
+                            <button class="buttons" onclick="us()"><li><a href="#">About-us</a></li></button>
+                            <button class="buttons" onclick="CopyRights()"><li><a href="#">Privacy-policy</a></li></button>
+                            <button class="buttons" onclick="background()"><li><a href="#">History</a></li></button>
+                            <button class="buttons" onclick="goal()"><li><a href="#">Goals</a></li></button>
+                        </ul>
+                    </div>
+                   
+                    <div class="Footer-column">
+                        <h4>What we imagine</h4>
+                        <ul>
+                            <button class="buttons"><li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">AI</a></li></button>
+                            <button class="buttons"><li><a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a></li></button>
+                            <button class="buttons"><li><a href="https://en.wikipedia.org/wiki/Graphics">Graphics and ads</a></li></button>
+                            <button class="buttons"><li><a href="https://en.wikipedia.org/wiki/Automations">Automations and programmings</a></li></button>
+                        </ul>
+                    </div>
+                    <div class="Footer-column">
+                        <h4>Follow us</h4>
+                        <ul>
+                            <button class="buttons"><li><a href="https://x.com/home">Tweeter</a></li></button>
+                            <button class="buttons"><li><a href="https://web.facebook.com/BoredPandaArt/videos/884254726883303/?mibextid=rS40aB7S9Ucbxw6v&_rdc=1&_rdr">Facebook</a></li></button>
+                            <button class="buttons"><li><a href="">Instagram</a></li></button>
+                            <button class="buttons"><li><a href="https://studio.youtube.com/channel/UCVyco7I87iVJQtz4e9BgKuA/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">Youtube</a></li></button><li>
+                            <button class="buttons"><li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li></button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        <script>
+            // JavaScript to display the text block when button is clicked
+            // Function to show the selected content and hide all others
+        function showText(showId) {
+            // Hide all content blocks first
+            var blocks = document.getElementsByClassName("content");
+            for (var i = 0; i < blocks.length; i++) {
+                blocks[i].style.display = "none";
+            }
+
+            // Show the selected block
+            var showBlock = document.getElementById(showId);
+            showBlock.style.display = "block";
+        }
+        
+            // Show video upload section
+            function showVideoUpload() {
+                document.getElementById("video-upload-section").style.display = "block";
+                document.getElementById("image-upload-section").style.display = "none";
+            }
+
+            // Show image upload section
+            function showImageUpload() {
+                document.getElementById("image-upload-section").style.display = "block";
+                document.getElementById("video-upload-section").style.display = "none";
+            }
+
+            // Function to upload and display the selected video
+            function uploadVideo() {
+                var fileInput = document.getElementById('video-file');
+                var file = fileInput.files[0];
+                if (file) {
+                    var videoElement = document.createElement('video');
+                    videoElement.controls = true;
+                    videoElement.src = URL.createObjectURL(file);
+                    videoElement.width = 300;  // Set video width as per your layout
+                    document.getElementById('uploaded-video').innerHTML = '';
+                    document.getElementById('uploaded-video').appendChild(videoElement);
+                }
+            }
+            // Function to upload and display the selected image
+            function uploadImage() {
+                var fileInput = document.getElementById('image-file');
+                var file = fileInput.files[0];
+                if (file) {
+                    var imgElement = document.createElement('img');
+                    imgElement.src = URL.createObjectURL(file);
+                    imgElement.width = 300;  // Set image width as per your layout
+                    document.getElementById('uploaded-image').innerHTML = '';
+                    document.getElementById('uploaded-image').appendChild(imgElement);
+                }
+            }
+            function companyName(){
+                alert('RevoAiTechs is the name of the company which was found by an African young boy Named as Revocatus Viane Andrew, who on reading different articles about artificial intelligence, He come to believe that Artificial intelligence(Ai) technology would work wonderful magics and finally he decided to establish a tech solutions company for offering solutions using Ai, Thus the name RevoAiTechs');
+            }
+            function background(){
+                alert('RevoAiTechs Idea emerged in the Mind of Mr Revocatus at 2023 when he was at Mbeya university of science and technology persuing His bachelor degree in electrical, electronics and Automations, Thus as a result of passion for automations , the Man become skillful on C,C++,JavaScript,PHP and Python,Microcontrollers programming especially Arduino family, PLC and SCADA finally, ML and AI, AND DECIDED to found a company named as RevoAiTechs for offering the services with his skills so that to solve the complex matters for individuals, companies to related to automations .');
+            }
+            function Founder(){
+                alert("Revocatus viane Andrew is the real guy who always believe in software-hardired automatic systems for improving efficiency of any systeme and even becoming close to 100% effectivenes with such systems, He believes if the AI software comes in contacts with hardwired machines and be applied in daily man's work, The product may be 1000 times the todays effeciency and income, So He believe super-ordinary working can be achieved with intelligent technology, Thus He found RevoAiTechs to let His goals comes true for many MEN and WOMEN in business industry of Tanzania and Globally ")
+            }
+            function us(){
+                alert("The RevoAiTechs platform, believe in the power of AI to transform businesses, streamline operations, and create impactful solutions tailored to meet the evolving needs of today's world. Our mission is to bridge the gap between complex technology and practical applications, making AI accessible, understandable, and highly effective for our clients");
+            }
+            function CopyRights(){
+                alert("The RevoAiTechs platform, Is a protected pratform with legal right to operate as an afficial platform to offer automations services if possible as per client needs, PROTECTED BY AI-RULES OF CONDUCTS ,ONLINE SERVICES CONDUCTS and REAL SITE-ENGINEER CONDUCTS, This conducts officialize the company to offer online and real engineering" );
+            }
+            function goal(){
+            alert('Our goal mission is to lead the way in AI and technology innovation while always staying true to our core values of accessibility, impact, and client satisfaction');
+            }
+        </script>
+    </body>
+</html>
